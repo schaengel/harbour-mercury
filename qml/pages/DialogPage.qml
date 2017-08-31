@@ -94,6 +94,12 @@ Page {
                     Component.onCompleted: {
                         itemLoader.source = "../components/messages/" + Utils.capitalize(model.type) + "Item.qml"
                     }
+                    Separator {
+                            width: parent.width
+                            color: Theme.primaryColor
+                            horizontalAlignment: Qt.AlignHCenter
+                    }
+
                 }
 
                 VerticalScrollDecorator { flickable: messagesView }
